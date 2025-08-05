@@ -10,6 +10,7 @@ venv/
 env/
 ENV/
 .venv/
+.env/
 
 # 🔹 OS-specific
 .DS_Store
