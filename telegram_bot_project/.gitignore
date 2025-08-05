@@ -1,0 +1,42 @@
+# 🔹 Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# 🔹 Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# 🔹 OS-specific
+.DS_Store
+Thumbs.db
+
+# 🔹 Logs
+*.log
+
+# 🔹 IDE / Editor configs
+.vscode/
+.idea/
+
+# 🔹 Environment variables (если используешь)
+.env
+
+# 🔹 Postman temporary files
+*.postman_environment.json
+
+# 🔹 Backup or temp files
+*.bak
+*.tmp
+*~
+
+# 🔹 Compiled output or build artifacts
+build/
+dist/
+
+# 🔹 System junk
+ehthumbs.db
+Icon?
