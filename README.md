@@ -27,7 +27,7 @@ This branch contains all QA-related projects and documentation, organized by fol
 | Folder | Description |
 |--------|-------------|
 | [`telegram_bot_project/`](./telegram_bot_project/) | Full QA-tested Telegram client bot built with Python + Flask. Includes bot code, test documentation, API tests (Postman), and result reports. |
-| [`telegram_bot_project/test/`](./telegram_bot_project/test/) | All test artifacts: `test_strategy.md`, `test_plan.md`, `test_scenarios.md`, `test_cases.md`, `test_results.md`, `postman_collection.json`, and screenshots. ||
+| [`telegram_bot_project/test/`](./telegram_bot_project/tests/) | All test artifacts: `test_strategy.md`, `test_plan.md`, `test_scenarios.md`, `test_cases.md`, `test_results.md`, `postman_collection.json`, and screenshots. ||
 | *(Coming soon)* `estiemy_web_tests/` | Test documentation from volunteer QA coordination: test cases, bug reports, user flow validations. |
 
 ---
