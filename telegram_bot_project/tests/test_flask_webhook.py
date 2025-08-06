@@ -1,6 +1,9 @@
 # test_flask_webhook.py
+import sys
+import os
 import json
 import pytest
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from flask_app import app
 from telegram import Update
 
