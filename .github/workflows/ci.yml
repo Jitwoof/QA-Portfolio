@@ -25,4 +25,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest telegram_bot_project/test/
+          pytest telegram_bot_project/tests/
