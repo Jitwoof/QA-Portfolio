@@ -1,3 +1,6 @@
+🇬🇧 This repository is written in English.  
+🇷🇺 Для русской версии документации — [README на русском](README.ru.md).
+
 # QA Portfolio — Yuliana Yaroshevich
 
 Welcome! This is my personal QA engineering portfolio. Here I have a structured collection of projects, test documentation, and hands-on examples of manual and API testing.
@@ -5,9 +8,7 @@ Welcome! This is my personal QA engineering portfolio. Here I have a structured 
 
 ## About Me
 
-I’m a QA Engineer with practical experience in testing web applications, REST APIs, and client-server interactions. I design clean test cases, write detailed bug reports, and enjoy solving tricky bugs through both manual investigation and API diagnostics.  
-
-I value clear documentation, structured thinking, and constant learning. My background includes working with international project teams (ESTIEM), developing a Telegram bot from scratch, and creating full-cycle QA documentation.
+I'm a QA engineer with a focus on manual testing web-applications and API, I own tools for bug tracking and test automation. I enjoy solving tricky situations and finding a key to a solution. My strengths are creating and maintaining clear test documentation, ability to work in teams, attention to detail, structured thinking and an analytical approach to error detection. I strive to apply my skills to improve product quality and reduce costs for company.
 
 
 ## 📁 What's in here?
