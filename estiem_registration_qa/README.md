@@ -1,20 +1,14 @@
 
 # 📂 estiem\_registration\_qa
 
-> **Title:** Optimizing Event Registration for ESTIEM  
-> **Role:** QA & Tech Coordinator  
-> **Period:** June 2023 – December 2024  
-> **Team:** International Student Tech Committee (30+ people)
-
----
-
 ## Introduction
+Problem: At ESTIEM we faced a problem, where participants were often unable to register for events due to bugs in web forms and a complex interface. This reduced the conversion rate and caused complaints.
 
-In 2023, as part of my work at **ESTIEM** (European Students of Industrial Engineering and Management), I led a mini QA initiative to enhance the quality and usability of registration forms and event landing pages for international student events. I treated it with a product mindset — focusing on **quality assurance**, **user experience**, and **data accuracy**.
+Solution: I conducted a series of usability tests and manual functional testing, identifying 10+ bugs, including critical data validation errors. Also I created test plans and optimize the work using the integration of Notion, Trello and Google Docs. After my changes, the registration conversion rate increased by 12%, and the application processing time was almost halved. The international team could process incoming data faster and make changes quickly.
 
----
+I documented all the changes in the bug tracker, uploaded the instructions to a shared repository, and monitored the quality of all new forms.
 
-##  Problem
+##  What problem we solved?
 
 There were some issues:
 
@@ -25,8 +19,6 @@ There were some issues:
 * Inconsistent data for internal use
 
 Our goal was to ensure that event registration forms and landing pages work flawlessly across devices and deliver clean, complete data to event organizers.
-
----
 
 ## My QA Workflow
 
@@ -61,8 +53,6 @@ Our goal was to ensure that event registration forms and landing pages work flaw
 * Re-tested every version (regression testing)
 * Integrated Google Forms with Notion and Trello for better internal data workflow
 
----
-
 ## Result
 
 | Metric                        | Before  | After       |
@@ -70,9 +60,8 @@ Our goal was to ensure that event registration forms and landing pages work flaw
 | Form Completion Rate          | 61%     | **92%**     |
 | Incorrect Submissions         | 27%     | **4%**      |
 | Participant Satisfaction (UX) | 3.5 / 5 | **4.8 / 5** |
-| Bugs Detected & Fixed         | –       | **12**     |
+| Bugs Detected & Fixed         | –       | **10+**     |
 
----
 
 ## 📄 Included Files
 
@@ -85,12 +74,10 @@ Our goal was to ensure that event registration forms and landing pages work flaw
 * `ux_review_summary.pdf` – key usability findings from live testing sessions
 * `screenshots/` – real test evidence and results
 
----
 
-## 🌱 Why It Matters
+## 🌱 Why It Matters?
 
-I demonstrated how a QA mindset can:
-
+I demonstrated how my QA mindset:
 * Improve user experience
 * Prevent data loss
 * Strengthen team collaboration
