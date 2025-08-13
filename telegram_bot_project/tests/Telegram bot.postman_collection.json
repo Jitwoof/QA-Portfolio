@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "_postman_id",
+		"name": "Telegram bot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46871540"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "API Telegram bot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"chat_id\": \"CHAT-ID\",\r\n  \"text\": \"Привет из Postman!\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.telegram.org/botTOKEN/sendMessage",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"botTOKEN",
+								"sendMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API TGBot access",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.telegram.org/botTOKEN/getMe",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"botTOKEN",
+								"getMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Polling test",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"chat_id\": \"CHAT-ID\",\r\n  \"text\": \"Привет из Postman!\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://api.telegram.org/botTOKEN/getUpdates",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"botTOKEN",
+								"getUpdates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Webhook test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.telegram.org/botTOKEN/getWebhookInfo",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"botTOKEN",
+								"getWebhookInfo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
