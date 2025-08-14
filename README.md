@@ -80,5 +80,8 @@ This branch contains all QA-related projects and documentation, organized by fol
 
 
 
+## Portfolio Map
+
+<img width="500" height="700" alt="QA Portfolio" src="https://github.com/user-attachments/assets/1cf579b1-8053-4e75-b45b-6f54989d45f9" />
 
 
