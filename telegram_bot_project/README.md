@@ -20,7 +20,7 @@ A Telegram bot built with Python and Flask that handles three commands:
 ## What's included?
 - Manual test plan and QA strategy
 - Postman API tests
-- Full QA documentation inside `/test/` folder
+- Full QA documentation inside `/tests/` folder
 
 
 
