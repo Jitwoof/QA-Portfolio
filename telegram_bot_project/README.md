@@ -1,5 +1,10 @@
 # Telegram Client Bot
 
+## Key results
+- Found **7 critical/major issues** (validation, webhook instability, error handling). See `tests/bug-001_CRITICAL_missing_validation.md`.
+- Postman collection included: `tests/Telegram bot.postman_collection.json`
+
+## Project description  
 **Problem:** my client's need was to create a telegram bot to quickly communicate with clients and automate query processing to optimize time resources. The problem was that users often sent incomplete or incorrect data, and managers had to spend a lot of time clarifying it.
 
 **Solution:** I designed a bot with a webhook, REST API, and HTML forms, and added processing for various scenarios (correct input, errors, and empty responses). To increase reliability, I did manual testing for positive, negative, and boundary scenarios.
@@ -16,3 +21,6 @@ A Telegram bot built with Python and Flask that handles three commands:
 - Manual test plan and QA strategy
 - Postman API tests
 - Full QA documentation inside `/test/` folder
+
+
+
