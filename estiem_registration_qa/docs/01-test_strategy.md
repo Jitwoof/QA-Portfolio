@@ -1,85 +1,99 @@
-# Test Plan — ESTIEM Registration Portal
+# Test Strategy – ESTIEM Registration & Event Management Platform
 
-## INTRODUCTION
-This document describes the test plan for the ESTIEM Registration Portal, which is used by students and organizers to register for events, manage profiles, and communicate with the international team.  
-The main objective is to ensure stability, usability, and data consistency across the registration process.
-
----
-
-## 1. OBJECTIVES
-- Verify functional correctness of the registration and login modules.  
-- Validate usability of UI/UX for end-users.  
-- Ensure that data is stored consistently in the database.  
-- Identify defects early and track them until resolution.  
-- Provide test coverage for positive, negative, and edge scenarios.  
+## 1. Introduction
+The purpose of this Test Strategy is to define the overall testing approach for the ESTIEM Registration & Event Management Platform.  
+The system enables international users to register for events, manage their data, and interact with organizational workflows.  
+Testing ensures reliability, usability, and stability across different countries, browsers, and usage scenarios.  
 
 ---
 
-## 2. SCOPE
-**In scope**:  
-- Registration form (input validation, mandatory fields, duplicate handling).  
-- Login/authentication flow.  
-- Email confirmation.  
-- Database record creation and updates.  
-- UI/UX behavior across different browsers.  
-
-**Out of scope**:  
-- Payment systems (not integrated in current release).  
-- External 3rd-party services not owned by ESTIEM.  
+## 2. Objectives
+- Verify correctness and stability of registration workflows (sign-up, login, form submissions).  
+- Ensure seamless integration between front-end (forms/UI) and back-end services (databases, APIs).  
+- Validate performance under load (simultaneous event registrations).  
+- Guarantee data integrity through SQL queries and validation checks.  
+- Enhance user experience by identifying and resolving UI/UX bottlenecks.  
 
 ---
 
-## 3. ASSUMPTIONS / RISKS  
+## 3. Scope
+### In Scope
+- Functional testing of registration forms, dashboards, and user flows.  
+- API testing of registration endpoints (validation, error handling, payloads).  
+- Cross-browser and cross-device testing (Chrome, Firefox, Safari, Mobile).  
+- SQL validation for data consistency.  
+- Regression testing before each major event launch.  
+- Performance and load testing of the registration module.  
 
-### 3.1 ASSUMPTIONS
-- Requirements are stable and do not change during the test cycle.  
-- Test environment reflects production environment.  
-- Test data can be freely inserted and cleared from the database.  
-
-### 3.2 RISKS
-- High traffic during event registration may cause performance issues.  
-- Lack of automated regression coverage may delay release cycles.  
-- Dependencies on external mail servers may affect confirmation testing.  
-
----
-
-## 4. TEST APPROACH
-- Manual functional testing (UI, API, forms validation).  
-- Negative and boundary testing for form inputs.  
-- Cross-browser testing (Chrome, Firefox, Safari).  
-- Database validation using SQL queries.  
-- Smoke & regression cycles before releases.  
-
-### 4.1 TEST AUTOMATION
-- Basic automation with **Pytest** considered for regression (login + registration happy path).  
-- Automation scope: API endpoints and form submission flows.  
+### Out of Scope
+- Internal finance and invoicing modules (tested by separate team).  
+- Deep security penetration testing (covered by IT Security group).  
 
 ---
 
-## 5. TEST ENVIRONMENT
-- **Web app**: ESTIEM Registration Portal (staging + production).  
-- **Browsers**: Chrome (latest), Firefox (latest), Safari.  
-- **Database**: PostgreSQL (staging).  
-- **Tools**: Jira (bug tracking), Google Sheets/Excel (scenarios), Postman (API testing).  
+## 4. Assumptions & Risks
+### Assumptions
+- Requirements are clearly documented in Notion and Trello.  
+- Test environment mirrors production as closely as possible.  
+- Agile methodology is applied with sprints of 2 weeks.  
+
+### Risks
+- Limited test environment availability before peak event launches.  
+- Last-minute requirement changes impacting test coverage.  
+- High load during registration deadlines could reveal untested bottlenecks.  
 
 ---
 
-## 6. MILESTONES / DELIVERABLES  
-
-### 6.1 TEST SCHEDULE
-- Week 1 — Review requirements, prepare scenarios.  
-- Week 2 — Execute functional tests, log defects.  
-- Week 3 — Regression cycle, verify fixes.  
-- Week 4 — Final acceptance testing.  
-
-### 6.2 DELIVERABLES
-- **registration_form_test-scenarios.xlsx** — functional scenarios for registration module.  
-- Test cases (Markdown or Excel) derived from scenarios.  
-- Bug reports in Jira.  
-- Final Test Report (summary of defects, pass/fail rate, release recommendation).  
+## 5. Test Approach
+- **Functional Testing**: Positive/negative scenarios, edge cases, boundary values.  
+- **Integration Testing**: End-to-end flows across modules (registration → confirmation email → database).  
+- **UI/UX Testing**: Usability checks (clarity of forms, accessibility, error messages).  
+- **API Testing**: Using Postman for validation, error handling, status codes, JSON payloads.  
+- **Database Validation**: SQL queries for data accuracy and consistency.  
+- **Performance Testing**: Simulate 500+ concurrent registrations using JMeter.  
 
 ---
 
-## REFERENCES
-- Test Strategy — ESTIEM QA Project  
-- Test Scenarios — [registration_form_test-scenarios.xlsx](./registration_form_test-scenarios.xlsx)  
+## 6. Test Automation
+- Partial automation planned for regression scenarios (critical workflows: registration, login, email confirmation).  
+- Automation stack: Python + Pytest + Requests (for API), Selenium/Playwright (for UI).  
+- CI/CD integration via GitHub Actions.  
+
+---
+
+## 7. Test Environment
+- **Staging environment**: mirrors production (database replicas, event data).  
+- **Browsers**: Chrome, Firefox, Safari, Edge.  
+- **Devices**: Desktop (Windows/Linux/Mac), Mobile (Android/iOS).  
+- **Tools**: Postman, JMeter, SQL Workbench, Trello, Jira/Notion.  
+
+---
+
+## 8. Milestones & Deliverables
+### Test Schedule
+- Sprint-based QA activities with defined test cycles.  
+- Smoke testing after each deployment.  
+- Full regression before every event launch.  
+
+### Deliverables
+- Test Plan  
+- Test Scenarios & Test Cases  
+- Bug Reports in Jira  
+- SQL validation reports  
+- Test Summary Report after each release  
+
+---
+
+## 9. Exit Criteria
+- All critical and high-priority defects resolved.  
+- Regression test suite passed.  
+- Performance tests within acceptable thresholds.  
+- Stakeholder sign-off on test results.  
+
+---
+
+## 10. Approval
+This document will be reviewed and approved by:  
+- QA Coordinator (you)  
+- Development Team Lead  
+- Event Operations Manager  
