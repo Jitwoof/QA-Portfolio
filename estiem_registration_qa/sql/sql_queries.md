@@ -1,6 +1,6 @@
 # SQL Queries for ESTIEM Registration System
 
-This document contains example SQL queries that were used to validate the correctness of data in the registration system.
+This document contains example SQL queries that were used to validate the correctness of data in the ESTIEM registration system.
 Queries cover duplicates detection, filtering by dates, aggregation, and joining related tables.
 
 
